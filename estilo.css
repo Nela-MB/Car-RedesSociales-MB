@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(iconos/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+    height: 100vh;
+}
+footer{
+    width: 20px;
+    margin: 30px;
+}
+ /* #melodia{
+    background-color: transparent;
+    border: none;
+}  */
+
+.BotonSilencio {
+    background-color: transparent;
+    border: none;
+}
+.BotonSilencio img {
+    margin-left: 12px;
+    margin-top: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;/* hace que cuando pose el cursor en la imagen, salga una manito para hacer click */
+
+    /* left: 10px; */
+}
+
+@media (min-width: 768px){
+    .BotonSilencio img{
+        margin-left: 30px;
+    }
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     position: relative;
+    margin: 40px;
+    padding: 0;
+}
+.contenedor .foto{
+    border-radius: 50%;
+    align-items: center;
+    /* position: absolute;
+    align-items: center;
+    top: 50px;
+    left: 45%; */
+
+    border: solid 3px #ffffff;
+    box-shadow: 5px #333;
+}
+.contenedor h1{
+    font-family:'Pacifico';
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    align-items: center;
+
+    position: absolute;
+    top: 120px;
+    /* left: 510px; */
+    text-shadow: 0px 4px 8px #070707;
+
+}
+.contenedor h1:hover{   /* efecto que hace brillar el texto al pasar el cursor*/
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #e9ec2c,
+    0 0 30px #fff,
+    0 0 40px #ff00de,
+    0 0 70px #ff00de,
+    0 0 80px #ff00de,
+    0 0 100px #ff00de,
+    0 0 150px #ff00de;
+}
+
+.contenedor h4{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transform: skewX(-15deg); /*Inclina la letra*/
+    color: #40bad8;
+    font-size: 15px;
+    /* border: solid 2px #e9ec2c; */
+    position: absolute;
+    top:160px;
+    /* left: 550px; */
+}
+
+.contenedor h5{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transform: skewX(-15deg); /*Inclina la letra*/
+    color: #82d6b6;
+    font-size: 15px;
+    /* border: solid 2px #e9ec2c; */
+    position: absolute;
+    top:180px;
+    /* left: 550px; */
+}
+
+.Contenedor-Botones {
+    display: flex;
+    flex-direction: column;
+    background: burlywood;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 500px;
+    transform: translate(-50%, -50%);
+    align-items: center; 
+    /* justify-content: center; */
+    margin: 15px;
+    margin-bottom: 50%;
+
+}
+
+.Contenedor-Botones a {
+    display: block;
+    background: chartreuse;
+    width: 300px;
+    margin: 10px;
+    padding: 5px 0px;
+    box-shadow: 0px 3px 5px #0ba163;
+    border-radius: 50px;
+    display: flex;
+    /*
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;*/
+}
+
+.btn img {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0x;
+    left: 40%;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn img:hover { /* efecto que hace levantar el icono al pasar el cursor*/
+    margin-top: -20px;
+
+}
+.Contenedor-Botones a:hover{
+    border: solid 4px #ffffff
+}
+
+/* .btn span{
+    display: flex;
+    text-align: center;
+} */
