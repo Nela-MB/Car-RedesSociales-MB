@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Reproduce la música automáticamente al cargar la página
     audio.play();
+    
 
     // Función para pausar/reproducir la música
     button.addEventListener("click", function() { // al hacer click en btn-imagen, se dispara este evento.
